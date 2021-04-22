@@ -33,8 +33,8 @@ def recognize_content(filename):
                                 aer_selection.append(cell.text)
         print("nAER Selection: {}".format(aer_selection))
 
-
-for file in os.listdir("C:\\Users\\anildwa\\Downloads\\AER (2)\\AER"):
+filepath = "Path to Folder that contains documents"
+for file in os.listdir(filepath):
     print("filename:" + file)
     recognize_content(file)
 
